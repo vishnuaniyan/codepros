@@ -1,6 +1,6 @@
-# Ignite - Boilerplate Project
+# CodePros- Boilerplate Project
 
-#### Ignite structure for FrontEnd Projects With Bootstrap, jQuery, SASS &amp; Compass support.
+#### CodePros structure for FrontEnd Projects With Bootstrap, jQuery, SASS &amp; Compass support.
 
 ## Features
 
@@ -10,9 +10,12 @@
   * Bower for assets organization
   * Grunt.js for building (and many tasks already configured!)
   * Great file/folder organization!
-  * One command build and deploy
   * 100% upgradable
 
+
+### coming soon
+  * One command build and deploy
+  
 ## Quickstart
 
   First of all, you need to install the applications below:
