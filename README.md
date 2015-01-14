@@ -1,6 +1,6 @@
 # CodePros- Boilerplate Project
 
-#### CodePros structure for FrontEnd Projects With Bootstrap, jQuery, SASS &amp; Compass support.
+#### Fast FrontEnd Projects With Bootstrap, jQuery, SASS &amp; Compass support.
 
 ## Features
 
@@ -15,6 +15,7 @@
 
 ### coming soon
   * One command build and deploy
+  * Jade HTML template engine
   
 ## Quickstart
 
@@ -29,7 +30,7 @@
 
   Well done, now you have all the requirements to get this project working!
 
- ## Downloading
+## Downloading
 
 Just download and unzip or clone the project inside the folder you want
   * [Download] or clone:
