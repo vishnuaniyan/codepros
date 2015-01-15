@@ -12,7 +12,18 @@ module.exports = function(grunt) {
         files: {
           'app/js/scripts.js': ['_/components/js/*.js']
         } //files
-      } //my_target
+      }, //my_target
+      dist: {
+                options: {
+                    mangle: false
+                },
+                files: [
+                    {
+                        src: 'app/js/scripts.js',
+                        dest: 'build/js/scripts.js'
+                    }
+                ] 
+            } //dist
     }, //uglify
 
     compass: {
