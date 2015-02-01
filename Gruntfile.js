@@ -2,8 +2,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-scss-lint');
+  // grunt.loadNpmTasks('grunt-scss-lint');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   // require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
   grunt.initConfig({
 
@@ -26,6 +27,26 @@ module.exports = function(grunt) {
             } //dist
     }, //uglify
 
+    // HTML Compression
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                }, //options
+                files: [
+                    // Admin
+                    {
+                        expand: true,
+                        cwd: 'app/', 
+                        src: ['**/*.html'],
+                        dest: 'build/'
+
+                    }
+                ] //files
+            } //dist
+        }, //htmlmin
+
     compass: {
       dev: {
         options: {
@@ -44,6 +65,17 @@ module.exports = function(grunt) {
                 } //options
             } //dist
     }, //compass
+
+    imagemin: {
+      dynamic: {
+          files: [{
+              expand: true,
+              cwd: 'app/',
+              src: ['**/*.{png,jpg,gif}'],
+              dest: 'build/'
+          }]
+      }
+    }, //imagemin
 
     watch: {
       options: { livereload: true },
@@ -95,5 +127,5 @@ module.exports = function(grunt) {
 
   }) //initConfig
   grunt.registerTask('default', ['connect', 'watch']);
-  grunt.registerTask('dist', ['compass']);
+  grunt.registerTask('dist', ['compass','imagemin','htmlmin']);
 } //exports

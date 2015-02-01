@@ -1,12 +1,16 @@
 {
-  "name": "nCodeProsBoilerplate",
+  "name": "codepros",
   "version": "0.0.1",
-  "dependencies" : {
+  "dependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-contrib-compass": "~0.8.0",
+    "grunt-contrib-htmlmin": "~0.2.0",
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-contrib-connect": "~0.8.0",
     "grunt-scss-lint": "~0.1.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-imagemin": "^0.9.2"
   }
 }

@@ -24,7 +24,7 @@
   * [Ruby](https://www.ruby-lang.org/en/) 1.9 or higher
   * [Node.js](http://nodejs.org)
   * Grunt `npm install -g bower grunt-cli`
-  * Bower `npm install -g bower`
+  * Bower `npm install -g bower`  - Problem in installing Bower on Windows? [Try the latest stable version of node](https://github.com/npm/npm/wiki/Troubleshooting)
   * Compass `[sudo] gem install compass`
   * Boostrap Sass `gem install bootstrap-sass`
 
