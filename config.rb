@@ -6,3 +6,4 @@ javascripts_dir = 'app/js'
 images_dir = 'app/images'
 output_style = :expanded
 relative_assets = true
+sass_options = {:sourcemap => true}
