@@ -56,7 +56,6 @@ This will remove the Git information so that you can re-initialize the project f
   * __build__            - Here goes your project ready for run. Deploy? Just copy this folder and be happy. DON'T CODE ANYTHING HERE!!!
 
 SASS files can be created in:
-
 > _/components/scss
 
 ## Configuration Files!

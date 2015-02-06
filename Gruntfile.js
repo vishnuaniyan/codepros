@@ -1,3 +1,20 @@
+/*
+
+TO DO
+
+1) Can this Gruntfile.js be abstracted into smaller parts?
+   - https://github.com/cowboy/wesbos/commit/5a2980a7818957cbaeedcd7552af9ce54e05e3fb
+
+2) Way to make Sass processing faster
+   - Try grunt-contrib-compass
+   - Try libsass
+
+3) Is HTML min is required? Is over all process can be make fast? 
+
+3) Use jade   
+
+*/
+
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
