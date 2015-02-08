@@ -2,16 +2,21 @@
 
 TO DO
 
-1) Can this Gruntfile.js be abstracted into smaller parts?
+1) Use grunt-contrib-cssmin to minify all css in "app" folder in to one.
+   - Make css in "app" folder to expanded form.(easy to debug)
+   - "dist" task mak all in a single minified css file.
+   -Use copy task if required. 
+
+2) Can this Gruntfile.js be abstracted into smaller parts?
    - https://github.com/cowboy/wesbos/commit/5a2980a7818957cbaeedcd7552af9ce54e05e3fb
 
-2) Way to make Sass processing faster
+3) Way to make Sass processing faster
    - Try grunt-contrib-compass
    - Try libsass
 
-3) Is HTML min is required? Is over all process can be make fast? 
+4) Is HTML min is required? Is over all process can be make fast? 
 
-3) Use jade   
+5) Use jade   
 
 */
 
