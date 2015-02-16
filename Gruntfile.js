@@ -24,7 +24,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  // grunt.loadNpmTasks('grunt-scss-lint');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   // require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
@@ -69,6 +68,39 @@ module.exports = function(grunt) {
             } //dist
         }, //htmlmin
 
+        // File Copies
+        // copy: {
+        //     dev: {
+        //         files: [
+        //             // Sprites
+        //             {
+        //                 expand: true,
+        //                 src: ['img/*.png'],
+        //                 dest: 'development/'
+        //             }
+        //         ]
+        //     },
+        //     dist: {
+        //         files: [
+        //             // 3rd Party Files
+        //             {
+        //                 expand: true,
+        //                 cwd: 'development',
+        //                 src: ['lib/**/*'],
+        //                 dest: 'build/<%= pkg.name %>/<%= pkg.version %>'
+        //             },
+
+        //             // Sprites
+        //             {
+        //                 expand: true,
+        //                 cwd: 'development',
+        //                 src: ['img/**/*'],
+        //                 dest: 'build/<%= pkg.name %>/<%= pkg.version %>'
+        //             }
+        //         ]
+        //     }
+        // },
+
     compass: {
       dev: {
         options: {
@@ -92,9 +124,9 @@ module.exports = function(grunt) {
       dynamic: {
           files: [{
               expand: true,
-              cwd: 'app/',
+              cwd: '_/components',
               src: ['**/*.{png,jpg,gif}'],
-              dest: 'build/'
+              dest: 'app/'
           }]
       }
     }, //imagemin
@@ -109,12 +141,18 @@ module.exports = function(grunt) {
 
       sass: {
         files: ['_/components/scss/**/*.scss'],
-        tasks: ['scsslint', 'compass:dev']
+        tasks: ['compass:dev']
       }, //sass
 
       html: {
         files: ['app/*.html']
-      },
+      }, //html
+
+      img: {
+        files: ['_/components/**/*.{png,jpg,gif}'],
+        tasks: ['imagemin']
+      }, //image
+
 
       livereload: {
         options: { livereload: true },
@@ -122,17 +160,6 @@ module.exports = function(grunt) {
       }
 
     }, //watch
-
-    scsslint: {
-      allFiles: [
-        '_/components/scss/**/*.scss'
-      ],
-      options: {
-        config: null,
-        reporterOutput: null,
-        colorizeOutput: true
-      }
-    }, // scsslint
 
     connect: {
       server: {
@@ -148,6 +175,6 @@ module.exports = function(grunt) {
     }
 
   }) //initConfig
-  grunt.registerTask('default', ['connect', 'watch']);
-  grunt.registerTask('dist', ['compass','imagemin','htmlmin']);
+  grunt.registerTask('default', ['connect', 'imagemin','watch']);
+  grunt.registerTask('dist', ['compass','htmlmin']);
 } //exports
