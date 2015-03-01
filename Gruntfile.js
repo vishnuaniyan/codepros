@@ -11,8 +11,7 @@ TO DO
    - https://github.com/cowboy/wesbos/commit/5a2980a7818957cbaeedcd7552af9ce54e05e3fb
 
 3) Way to make Sass processing faster
-   - Try grunt-contrib-compass
-   - Try libsass
+   - Try libsass (Done , Still require some modifications)
 
 4) Is HTML min is required? Is over all process can be make fast? 
 
@@ -23,11 +22,19 @@ TO DO
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-sass');
   // require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
   grunt.initConfig({
+    pkg: grunt.file.readJSON("package.json"),
+ 
+    // Define paths.
+    paths: {
+      sass: '_/components/scss',
+      devCSS: '/app/css',
+      prodCSS: 'build/css',
+    }, // paths
 
     uglify: {
       my_target: {
@@ -101,24 +108,49 @@ module.exports = function(grunt) {
         //     }
         // },
 
-    compass: {
+    // compass: {
+    //   dev: {
+    //     options: {
+    //       config: 'config.rb'
+    //     } //options
+    //   }, //dev
+    //   dist: {
+    //             options: {
+    //                 sassDir: '_/components/scss',
+    //                 imagesDir: '/app/img',
+    //                 cssDir: 'build/css',
+    //                 javascriptsDir: 'build/lib',
+    //                 httpGeneratedImagesPath: 'build/img',
+    //                 noLineComments: true,
+    //                 outputStyle: 'compressed'
+    //             } //options
+    //         } //dist
+    // }, //compass
+
+    sass: {
       dev: {
         options: {
-          config: 'config.rb'
-        } //options
-      }, //dev
+          sourceMap: true,
+          sourceComments: false,
+          outputStyle: 'expanded'
+        },
       dist: {
-                options: {
-                    sassDir: '_/components/scss',
-                    imagesDir: '/app/img',
-                    cssDir: 'build/css',
-                    javascriptsDir: 'build/lib',
-                    httpGeneratedImagesPath: 'build/img',
-                    noLineComments: true,
-                    outputStyle: 'compressed'
-                } //options
-            } //dist
-    }, //compass
+          options: {
+              sourceMap: false,
+              sourceComments: false,
+              outputStyle: 'expanded'
+                   } //options
+            } ,//dist
+        files: [{
+          expand: true,
+          cwd: '_/components/scss',
+          src: ['**/*.scss'],
+          dest: 'app/css/',
+          ext: '.css'
+        },
+        ],
+      }
+    }, // sass
 
     imagemin: {
       dynamic: {
@@ -141,7 +173,7 @@ module.exports = function(grunt) {
 
       sass: {
         files: ['_/components/scss/**/*.scss'],
-        tasks: ['compass:dev']
+        tasks: ['sass:dev']
       }, //sass
 
       html: {
@@ -175,6 +207,6 @@ module.exports = function(grunt) {
     }
 
   }) //initConfig
-  grunt.registerTask('default', ['connect', 'imagemin','watch']);
+  grunt.registerTask('default', ['connect','watch']);
   grunt.registerTask('dist', ['compass','htmlmin']);
 } //exports

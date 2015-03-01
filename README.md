@@ -1,21 +1,24 @@
 # CodePros- Boilerplate Project
 
-#### Fast FrontEnd Projects With Bootstrap, jQuery, SASS &amp; Compass support.
+#### Fast FrontEnd Projects With Bootstrap, jQuery, SASS [Libsass] &amp; Libsass support.
 
 ## Features
 
   * Bootstrap
   * Node.js
-  * Sass and Compass
+  * Sass [Lightning fast Sass compiling with libsass]
   * Bower for assets organization
   * Grunt.js for building (and many tasks already configured!)
   * Great file/folder organization!
-  * 100% upgradable
+  * 100% upgradeable
 
 
 ### coming soon
-  * One command build and deploy
+  * One command fast build and deploy
   * Jade HTML template engine
+  * H5BP - html5 ★ boilerplate integration. 
+  * Image Spiriting options
+  * SVG integration.
   
 ## Quickstart
 
@@ -35,7 +38,11 @@
 Just download and unzip or clone the project inside the folder you want
   * [Download] or clone:
 
- > rm -rf .git
+  > git clone https://github.com/vishnuaniyan/codepros.git
+
+  And 
+
+  > rm -rf .git
 
 This will remove the Git information so that you can re-initialize the project for Git or any other Source Versioning Control software you wish to use.
 
