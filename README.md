@@ -13,7 +13,7 @@
   * 100% upgradeable
 
 
-### coming soon
+### Coming soon
   * One command fast build and deploy
   * Jade HTML template engine
   * H5BP - html5 ★ boilerplate integration. 
