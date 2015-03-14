@@ -16,10 +16,10 @@
 	"buffers":
 	[
 		{
-			"file": "codepros.sublime-project",
+			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 73,
+				"buffer_size": 686,
 				"line_ending": "Windows"
 			}
 		}
@@ -357,24 +357,26 @@
 			[
 				{
 					"buffer": 0,
-					"file": "codepros.sublime-project",
-					"semi_transient": true,
+					"file": "package.json",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 73,
+						"buffer_size": 686,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								594,
+								594
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -442,7 +444,7 @@
 		[
 			[
 				"",
-				"C:\\Users\\vishnu\\Desktop\\work\\codepros\\dev.codepros.sublime-workspace"
+				"C:\\Users\\vishnu\\Desktop\\work\\dev.codepros\\dev.codepros.sublime-project"
 			]
 		],
 		"width": 380.0

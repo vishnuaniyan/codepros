@@ -3,6 +3,8 @@ module.exports = {
     options: {
       // sourceMap: true,
       // cssmin will minify later
+      
+      sourceMap: true,
       style: 'expanded'
     },
     files: {

@@ -12,7 +12,7 @@ module.exports = {
   },
   css: {
     files: ['_/css/*.scss'],
-    tasks: ['sass', 'autoprefixer', 'cssmin'],
+    tasks: ['newer:sass', 'autoprefixer', 'cssmin'],
     options: {
       spawn: false,
     }
@@ -22,7 +22,7 @@ module.exports = {
       }, //html
   images: {
     files: ['_/img/**/*.{png,jpg,gif}', '_/img/*.{png,jpg,gif}'],
-    tasks: ['imagemin'],
+    tasks: ['newer:imagemin'],
     options: {
       spawn: false,
     }
