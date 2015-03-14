@@ -58,7 +58,6 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.task.run('notify_hooks');
   // Default Task is basically a rebuild
   grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin', 'autoprefixer']);
 

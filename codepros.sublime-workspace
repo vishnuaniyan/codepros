@@ -15,6 +15,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "codepros.sublime-project",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -100,10 +108,17 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/vishnu/Desktop/codepros"
+		"/C/Users/vishnu/Desktop/codepros",
+		"/C/Users/vishnu/Desktop/codepros/build"
 	],
 	"file_history":
 	[
+		"/C/Users/vishnu/Desktop/codepros/package.json",
+		"/C/Users/vishnu/Desktop/work/codepros/Gruntfile.js",
+		"/C/Users/vishnu/Desktop/codepros/index.html",
+		"/C/Users/vishnu/Desktop/codepros/Gruntfile.js",
+		"/C/Users/vishnu/Desktop/codepros/tasks/options/notify.js",
+		"/C/Users/vishnu/Desktop/codepros/tasks/options/conventional-changelog.js",
 		"/C/Users/vishnu/Desktop/mwm001.dev123/Gruntfile.js",
 		"/C/Users/vishnu/Desktop/My-Grunt-Boilerplate/index.html",
 		"/C/Users/vishnu/Desktop/My-Grunt-Boilerplate/Gruntfile.js",
@@ -160,8 +175,6 @@
 		"/C/Users/vishnu/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/C/Users/vishnu/Desktop/new_temp/js/jquery.js",
 		"/C/Users/vishnu/Desktop/water/index.html",
-		"/C/Users/vishnu/Desktop/codepros/package.json",
-		"/C/Users/vishnu/Desktop/codepros/Gruntfile.js",
 		"/C/Users/vishnu/Desktop/test/codepros/Gruntfile.js",
 		"/C/Users/vishnu/Desktop/test/codepros/app/index.html",
 		"/C/Users/vishnu/Desktop/test/codepros/_/components/scss/partials/_layout.scss",
@@ -227,11 +240,7 @@
 		"/C/Users/vishnu/Desktop/public_html/project-detail-madurai-mall.html",
 		"/C/Users/vishnu/Desktop/public_html/project-detail-sigma-mall.html",
 		"/C/Users/vishnu/Desktop/public_html/project-detail.html",
-		"/C/Users/vishnu/Desktop/public_html/projects.html",
-		"/C/Users/vishnu/Desktop/public_html/services.html",
-		"/C/Users/vishnu/Desktop/public_html/team.html",
-		"/C/Users/vishnu/Desktop/public_html/terms.html",
-		"/C/Users/vishnu/Desktop/public_html/about.html"
+		"/C/Users/vishnu/Desktop/public_html/projects.html"
 	],
 	"find":
 	{
@@ -343,8 +352,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "codepros.sublime-project",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -404,7 +442,7 @@
 		[
 			[
 				"",
-				"C:\\Users\\vishnu\\Desktop\\codepros\\codedrops.sublime-workspace"
+				"C:\\Users\\vishnu\\Desktop\\work\\codepros\\dev.codepros.sublime-workspace"
 			]
 		],
 		"width": 380.0
