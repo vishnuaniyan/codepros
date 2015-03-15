@@ -1,6 +1,6 @@
 # CodePros- Boilerplate Project
 
-#### Fast FrontEnd Projects With Bootstrap, jQuery, SASS [Libsass] &amp; Libsass support.
+#### Fast FrontEnd Projects With Bootstrap, jQuery, SASS [Libsass] &amp; Bower support.
 
 ## Features
 
@@ -17,12 +17,12 @@
 ### Coming soon
 =======
 ### coming soon [Working on a major update :) Will Commit changes when it is done]
->>>>>>> origin/master
+
   * One command fast build and deploy
   * Jade HTML template engine
   * H5BP - html5 ★ boilerplate integration. 
   * Image Spiriting options
-  * SVG integration.
+  * SVG integration. [SVG tempting, Spiriting]
   
 ## Quickstart
 
@@ -32,7 +32,7 @@
   * [Node.js](http://nodejs.org)
   * Grunt `npm install -g bower grunt-cli`
   * Bower `npm install -g bower`  - Problem in installing Bower on Windows? [Try the latest stable version of node](https://github.com/npm/npm/wiki/Troubleshooting)
-  * Compass `[sudo] gem install compass`
+  * Compass `[sudo] gem install compass` [not requied as now moved in to Libsass for faster workflow]
   * Boostrap Sass `gem install bootstrap-sass`
 
   Well done, now you have all the requirements to get this project working!
@@ -52,22 +52,22 @@ This will remove the Git information so that you can re-initialize the project f
 
 
   * Optional: Install or update all Grunt dependencies running:
-  `npm install`
+  `npm install` ot just `npm i`
 
   * Or just open your folder and run:
    `grunt`  - Use it when developing, takes less time to run and don't compress your files. Good for debug. It also open your defalt browser start a local server with livereload :)
    
 ## Folder Structure
 
-  This project is organized following the structure below:
+  This project is organized following the structure below:     
 
   * __node_modules__     - All plugins used by grunt and modules from Node: clean, uglify, compass, etc...
-  * ___/components__     - The global style(scss),js of application goes hereoverrides.
-  * __app__              - Your HTML files ,font and javascripts only. Grunt will bring images and css for you, don't worry.
-  * __build__            - Here goes your project ready for run. Deploy? Just copy this folder and be happy. DON'T CODE ANYTHING HERE!!!
+  * __/__                - The global style(scss),js,img of application goes here overrides.
+  * __build__            - Build file Your HTML files. Grunt will bring all other folders for you, don't worry.
+  * __dist__             -[Not done*]  Here goes your project ready for run. Deploy? Just copy this folder and be happy. DON'T CODE ANYTHING HERE!!!
 
 SASS files can be created in:
-> _/components/scss
+> _/css
 
 ## Configuration Files!
 
