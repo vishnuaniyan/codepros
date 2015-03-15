@@ -13,7 +13,6 @@
   * 100% upgradeable
 
 
-<<<<<<< HEAD
 ### Coming soon
 =======
 ### coming soon [Working on a major update :) Will Commit changes when it is done]
