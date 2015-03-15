@@ -1,10 +1,9 @@
-$backgroundColor: #eee;
-$spacing: 2rem;
-$links: #35a8ff;
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/base';
+@import 'partials/layout';
+@import 'partials/modules';
 
-@import "libs/normalize";
-@import "libs/owl.carousel";
-@import "owl.theme";
 // a comment dfdf fdgdf
 
 * {
