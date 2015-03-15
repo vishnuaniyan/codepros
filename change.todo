@@ -1,0 +1,13 @@
+To Do Taskes:
+
+  ☐ Use bower and grunt pligin to manage assets.
+  ☐ H5BP integration.
+  ☐ Better JS dependency management (Require js?)
+  ☐ css --> scss for css files in lib folder 
+  ☐ css magnification of all file in lib folder(if required)
+
+
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ Divide scss file to partials, Ideally just a single build - global.scss turns into /build/global.css @done (15-03-15 10:27) @project(To Do Taskes)
